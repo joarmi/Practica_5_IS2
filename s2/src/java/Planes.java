@@ -97,13 +97,39 @@ public class Planes extends HttpServlet {
                 out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
                 out.println("</head>");
                 out.println("<body>");
+                out.println("<form id=\"form2\" name=\"form2\" method=\"post\" action=\"Votacion\">");
+                
                 out.println("<img src=\"esqui.png\" alt=\"esqui\">");
                 out.println("<input type=" + "radio" + " name=" + "eleccion" + " value=" + "esqui" + "> Esqui");
                 out.println("<br/> <br/>");
                 out.println("<big>Nos vamos a esquiar. Saldremos en coches particulares y pasaremos 2 dias en las pistas de Astun (Huesca). Tendremos un forfait para un dia y pension completa para dos dias en un alojamiento rural. El precio total es de 160 euros.</big>");
                 out.println("<br/> <br/>");
-                out.println("<a href=\"inicio.html\"> Volver al test </a>");
+                out.println("<br/> <br/>");
+                
+                out.println("<img src=\"casa_rural.png\" alt=\"esqui\">");
+                out.println("<input type=" + "radio" + " name=" + "eleccion" + " value=" + "casa_rural" + "> casa rural");
+                out.println("<br/> <br/>");
+                out.println("<big>Una bonita casa rural a las afueras de Valencia con todo lujo de detalles durante 3 dias. Todos estos lujos por 150 euros.</big>");
+                out.println("<br/> <br/>");
+                out.println("<br/> <br/>");
+                
+                out.println("<img src=\"amsterdam.png\" alt=\"esqui\">");
+                out.println("<input type=" + "radio" + " name=" + "eleccion" + " value=" + "amsterdam" + "> amsterdam");
+                out.println("<br/> <br/>");
+                out.println("<big>Un gran e inolvidabe viaje a amsterdam donde estaremos probando sus deliciosos brownies durante 5 dias por 250.</big>");
+                out.println("<br/> <br/>");
+                out.println("<br/> <br/>");
+                
+                out.println("<img src=\"ETSE.png\" alt=\"esqui\">");
+                out.println("<input type=" + "radio" + " name=" + "eleccion" + " value=" + "ETSE" + "> ETSE");
+                out.println("<br/> <br/>");
+                out.println("<big>Un gran dia en la ETSE haciendo trabajos, super divertido y todo esto GRATIS.</big>");
+                out.println("<br/> <br/>");
+                
+                out.println("<input type=\"submit\" name=\"Submit\" value=\"Votar\" />");
+                out.println("</form>");
                 out.println("</body>");
+                out.println("</html>");
 
             } else {
 
@@ -119,6 +145,7 @@ public class Planes extends HttpServlet {
                 out.println("<br/> <br/>");
                 out.println("<a href=\"inicio.html\"> Volver al test </a>");
                 out.println("</body>");
+                out.println("</html>");
 
             }
 
@@ -136,6 +163,7 @@ public class Planes extends HttpServlet {
             out.println("<br/> <br/>");
             out.println("<a href=\"inicio.html\"> Volver al test </a>");
             out.println("</body>");
+            out.println("</html>");
 
         }
 
